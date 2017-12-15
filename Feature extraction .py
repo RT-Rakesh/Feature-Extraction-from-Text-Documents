@@ -1,17 +1,10 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Dec  5 21:21:36 2017
-
-@author: RT Rakesh
-"""
 
 import os
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 # we have to declare directory path where our data is present.
-document_path="/home/iamdatapreneur/Downloads/Assignment_samples/"
+document_path="Enter the location to the files for feature extraction."
 
 # We are reading all the filenames and creating a list filenames.
 filenames=[os.path.join(document_path, each)
@@ -37,7 +30,7 @@ features=vectorizer.get_feature_names()
 
 
 # We have to declare the file name and path where we store the features.
-output_path="/home/iamdatapreneur/Downloads/"
+output_path="Enter the location where do you want to save the output file"
 
 # We shall write the features into a new txt file. 
 with open(output_path+"feature_list.txt", 'w') as file_handler:
